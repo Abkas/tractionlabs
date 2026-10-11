@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traction Labs · AI Video Ads, Nepal</title>
+<meta name="description" content="Traction Labs makes short AI video ads for small businesses in Nepal: AI scenes, motion graphics, Nepali captions and voiceover, ready for Reels, TikTok and Facebook.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23C8FF3D'/><text x='16' y='23' font-family='Arial' font-weight='800' font-size='19' text-anchor='middle' fill='%230B0B0D'>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=Mukta:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0B0B0D;--card:#151518;--line:#26262b;--fg:#F4F4F1;--mute:#9a9aa3;--ac:#C8FF3D;--vi:#7C5CFF}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.08;letter-spacing:-.02em}
+  .eyebrow{color:var(--ac);font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+  section{padding:72px 0;border-top:1px solid var(--line)}
+  h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px}
+
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;letter-spacing:.04em;text-decoration:none}
+  .logo i{display:grid;place-items:center;width:28px;height:28px;border-radius:7px;background:var(--ac);color:var(--bg);font-style:normal;font-weight:800}
+  .btn{display:inline-block;background:var(--ac);color:var(--bg);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:12px}
+  .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+  nav .btn{padding:9px 16px;font-size:14px}
+
+  .hero{padding:64px 0 88px;background:radial-gradient(60% 80% at 100% 0%,rgba(124,92,255,.22),transparent 70%)}
+  .hero h1{font-size:clamp(44px,8vw,88px);max-width:12ch}
+  .hero h1 span{color:var(--ac)}
+  .hero p{color:#cfcfd4;font-size:clamp(17px,2vw,20px);max-width:52ch;margin:22px 0 32px}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{font-size:19px;margin-bottom:6px}
+  .card p{color:var(--mute);font-size:15px}
+
+  .pk{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .pk .card{padding:28px}
+  .pk .card.adv{border-color:var(--vi)}
+  .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:8px;padding:4px 10px;color:var(--mute)}
+  .adv .tag{background:var(--vi);border-color:var(--vi);color:#fff}
+  .from{color:var(--mute);font-size:14px;margin-top:18px}
+  .price{font-family:"Space Grotesk";font-size:44px;font-weight:700}
+  .np{font-family:Mukta;color:var(--mute);font-size:15px;margin-top:-6px}
+  .pk ul{list-style:none;margin:20px 0 16px;display:grid;gap:10px}
+  .pk li{padding-left:28px;position:relative}
+  .pk li:before{content:"";position:absolute;left:0;top:4px;width:17px;height:17px;border-radius:50%;background:var(--ac) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='%230B0B0D' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") center/13px no-repeat}
+  .best{color:var(--mute);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+  .note{color:var(--mute);font-size:15px;margin-top:18px}
+
+  .steps{display:grid;gap:12px;counter-reset:s}
+  .steps .card{display:flex;gap:18px;align-items:flex-start}
+  .steps .card:before{counter-increment:s;content:counter(s);flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--ac);color:var(--bg);font-weight:800}
+
+  .contact{text-align:center;padding:88px 0}
+  .contact h2{font-size:clamp(34px,6vw,60px);margin-bottom:14px}
+  .contact h2 span{color:var(--ac)}
+  .contact p{color:var(--mute);margin-bottom:28px}
+  .contact .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#"><i>T</i>TRACTION LABS</a>
+      <a class="btn" href="#contact">Get a quote</a>
+    </nav>
+    <div style="padding-top:56px">
+      <div class="eyebrow">AI video ads · Nepal</div>
+      <h1>Ads that make people <span>stop scrolling.</span></h1>
+      <p>Short video ads for small businesses. AI scenes, motion graphics, Nepali captions and voiceover, made for Instagram Reels, TikTok and Facebook.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Start your ad</a>
+        <a class="btn ghost" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>Agency-quality ads at small-business prices.</h2>
+    <div class="grid">
+      <div class="card"><h3>AI-generated scenes</h3><p>Visuals built around your story, with no film crew or shoot day.</p></div>
+      <div class="card"><h3>Motion graphics</h3><p>Animated iPhone and WhatsApp chats that show customers how your service works.</p></div>
+      <div class="card"><h3>Nepali &amp; English</h3><p>Captions synced to voiceover, written for your local audience.</p></div>
+      <div class="card"><h3>Ready to post</h3><p>Vertical 9:16, 1080×1920 HD with music and sound, ready for Reels, TikTok and Stories.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">Packages</div>
+    <h2>Simple pricing. Fixed once agreed.</h2>
+    <div class="pk">
+      <div class="card">
+        <span class="tag">Basic video</span>
+        <div class="from">starting from</div>
+        <div class="price">Rs. 2,000</div>
+        <div class="np">देखि सुरु</div>
+        <ul>
+          <li>AI-generated scenes for your story</li>
+          <li>Full edit, up to 30 seconds</li>
+          <li>Nepali / English captions</li>
+          <li>Music &amp; sound, ready to post</li>
+        </ul>
+        <div class="best">Best for simple promos &amp; offers</div>
+      </div>
+      <div class="card adv">
+        <span class="tag">Advanced video</span>
+        <div class="from">starting from</div>
+        <div class="price">Rs. 4,000</div>
+        <div class="np">देखि सुरु</div>
+        <ul>
+          <li>Everything in Basic</li>
+          <li>Motion graphics: animated iPhone &amp; WhatsApp chats</li>
+          <li>Animated captions synced to voiceover</li>
+          <li>Branded end card with logo &amp; contact</li>
+        </ul>
+        <div class="best">Best for story-style ads</div>
+      </div>
+    </div>
+    <p class="note">More scenes, longer videos, extra animations, or voiceover and script writing change the price. You always get the exact price before we start.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2>From idea to ad in four steps.</h2>
+    <div class="steps">
+      <div class="card"><div><h3>Send your script or idea</h3><p>Tell us what the ad is about. We can help write it.</p></div></div>
+      <div class="card"><div><h3>Get your exact price</h3><p>Based on scenes, length and effects. Fixed once agreed.</p></div></div>
+      <div class="card"><div><h3>50% advance, we start</h3><p>You get a watermarked preview to review. Two rounds of small changes are free.</p></div></div>
+      <div class="card"><div><h3>Pay the rest, get the final file</h3><p>Clean, full-quality video ready to post.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Ready to start? <span>Message us.</span></h2>
+    <p>Send your idea and we'll reply with a price.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/9779849515552?text=Hi%20Traction%20Labs%2C%20I%27d%20like%20a%20video%20ad.">Message on WhatsApp</a>
+      <a class="btn ghost" href="tel:+9779849515552">+977 984-9515552</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Traction Labs · Kathmandu, Nepal</span>
+    <span>AI video ads for small businesses</span>
+  </div>
+</footer>
+</body>
+</html>
