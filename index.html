@@ -57,6 +57,13 @@
   .steps .card{display:flex;gap:18px;align-items:flex-start}
   .steps .card:before{counter-increment:s;content:counter(s);flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--ac);color:var(--bg);font-weight:800}
 
+  .work{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,340px))}
+  .work .card{padding:12px}
+  .work video{display:block;width:100%;aspect-ratio:9/16;border-radius:10px;background:#000}
+  .work .meta{padding:14px 8px 6px}
+  .work .meta .tag{margin-bottom:10px}
+  .work .meta h3{margin-bottom:6px}
+
   .contact{text-align:center;padding:88px 0}
   .contact h2{font-size:clamp(34px,6vw,60px);margin-bottom:14px}
   .contact h2 span{color:var(--ac)}
@@ -79,7 +86,7 @@
       <p>Short video ads for small businesses. AI scenes, motion graphics, Nepali captions and voiceover, made for Instagram Reels, TikTok and Facebook.</p>
       <div class="cta">
         <a class="btn" href="#contact">Start your ad</a>
-        <a class="btn ghost" href="#pricing">See pricing</a>
+        <a class="btn ghost" href="#work">See our work</a>
       </div>
     </div>
   </div>
@@ -94,6 +101,31 @@
       <div class="card"><h3>Motion graphics</h3><p>Animated iPhone and WhatsApp chats that show customers how your service works.</p></div>
       <div class="card"><h3>Nepali &amp; English</h3><p>Captions synced to voiceover, written for your local audience.</p></div>
       <div class="card"><h3>Ready to post</h3><p>Vertical 9:16, 1080×1920 HD with music and sound, ready for Reels, TikTok and Stories.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Our work</div>
+    <h2>Ads we've made for local businesses.</h2>
+    <div class="work">
+      <div class="card">
+        <video src="work/yatra-ev.mp4" poster="work/yatra-ev.jpg" controls playsinline preload="none"></video>
+        <div class="meta">
+          <span class="tag">Advanced</span>
+          <h3>Yatra Rental · EV car rental</h3>
+          <p>A story ad: friends plan a Nagarkot trip, the car becomes a problem, and a WhatsApp chat with Yatra Rental solves it. Animated chats, Nepali captions synced to voiceover, branded end card.</p>
+        </div>
+      </div>
+      <div class="card">
+        <video src="work/yatra-self-drive.mp4" poster="work/yatra-self-drive.jpg" controls playsinline preload="none"></video>
+        <div class="meta">
+          <span class="tag">Basic</span>
+          <h3>Yatra Rental · Self-drive promo</h3>
+          <p>A fast problem-to-solution promo: expensive taxis and crowded buses, then the keys to your own ride and a trip to the mountains.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
